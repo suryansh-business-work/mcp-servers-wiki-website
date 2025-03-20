@@ -1,6 +1,12 @@
+import Head from 'next/head'
+
 export default function Home() {
   return (
-    <div className="container">
+    <div>
+      <Head>
+        <title>MCP Server Wiki</title>
+      </Head>
+      <div className="container">
       <div className="wrapper">
         <div className="content">
           <div className="item">
@@ -10,6 +16,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
