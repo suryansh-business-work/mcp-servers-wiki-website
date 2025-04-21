@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import styles from './page.module.css';
 
 export default function Home() {
   return (
@@ -6,17 +7,17 @@ export default function Home() {
       <Head>
         <title>MCP Server Wiki</title>
       </Head>
-      <div className="container">
-      <div className="wrapper">
-        <div className="content">
-          <div className="item">
-            <h1>MCP Server Wiki 🚀</h1>
-            <p>Unlock the future of AI with **Model Context Protocol (MCP)** servers.</p>
-            <p>Stay tuned for the ultimate **MCP server directory** - featuring real-time, dynamic, and scalable AI solutions!</p>
+      <div className={styles.container}>
+        <div className={styles.wrapper}>
+          <div className={styles.content}>
+            <div className={styles.item}>
+              <h1 className={styles.title}>MCP Server Wiki 🚀</h1>
+              <p>Unlock the future of AI with <strong>Model Context Protocol (MCP)</strong> servers.</p>
+              <p>Stay tuned for the ultimate <strong>MCP server directory</strong> - featuring real-time, dynamic, and scalable AI solutions!</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 }
